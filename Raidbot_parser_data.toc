@@ -1,0 +1,7 @@
+## Interface: 90005
+## Version: 1.0.0
+## Title: Hello World
+## Notes: My first addon
+## Author: YourName
+
+tooltip.lua

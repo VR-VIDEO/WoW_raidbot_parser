@@ -1,0 +1,14 @@
+-- Define a callback function to handle tooltip data updates for items
+local function OnTooltipSetItem(tooltip, data)
+    if tooltip == GameTooltip then
+        local itemId = data.id
+        if itemId == 202470 then
+            tooltip:AddLine(" ") -- Blank line
+            tooltip:AddLine("Hello World")
+            tooltip:Show()
+        end
+    end
+end
+
+-- Register the callback function to handle item tooltip data updates
+TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, OnTooltipSetItem)
